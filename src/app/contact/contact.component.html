@@ -1,0 +1,104 @@
+<mat-card fxLayout="column" fxLayoutAlign="start stretch" [ngStyle]="{'background-color':'#3f53b5','color':'white' }">
+    <div fxLayout="row" fxFlexOffset="15"></div>
+    <div fxLayout="row" fxLayoutAlign="center stretch">
+        <H1 [ngStyle]="{'margin':'auto'}">Communication</H1>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center Center">
+        <div  fxFlex.md="1%" fxFlex.xl="1%" fxFlex.xs="10%" fxFlex.sm="1%" fxFlex.lg="1%" ></div>
+        <H2  [ngStyle]="{'text-align':'center'}"></H2>
+        <div  fxFlex.md="1%" fxFlex.xl="1%" fxFlex.xs="10%" fxFlex.sm="1%" fxFlex.lg="1%" ></div>
+    </div>
+</mat-card>
+
+<!-- gap -->
+<div fxLayout="column" fxLayoutAlign="start Stretch">
+    <div fxLayout="row" fxFlexOffset="2"></div>
+</div>
+<!-- left gap and start writing -->
+<div fxLayout="row" fxLayoutAlign="start Stretch">
+    <div fxFlex="15%"></div>
+   
+    <div [ngClass]="{'Font': true}">
+            Please fill out the form below to Communicate.To learn about me, my work, my skills, please visit About or view my Portfolio.
+    </div>
+    <div fxFlex="20%"></div>
+</div>
+
+<!-- gap -->
+<div fxLayout="column" fxLayoutAlign="start Stretch">
+        <div fxLayout="row" fxFlexOffset="2"></div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="start Stretch">
+            <div fxFlex="15%" fxHide.xs></div>
+           <B>About You</B>
+          
+            <div fxFlex="20%"></div>
+        </div>
+        <!-- gap -->
+<div fxLayout="column" fxLayoutAlign="start Stretch">
+    <div fxLayout="row" fxFlexOffset="1"></div>
+</div>
+<!-- divider -->
+        <div fxLayout="row" fxLayoutAlign="start Stretch">
+                <div fxFlex="15%" fxHide.xs></div> 
+                <mat-divider fxFlex="1 0"></mat-divider>
+                
+                <div fxFlex="20%" fxHide.xs></div>
+            </div>
+            <!-- gap -->
+<div fxLayout="column" fxLayoutAlign="start Stretch">
+    <div fxLayout="row" fxFlexOffset="1"></div>
+</div>
+<!-- <form  method="post"> -->
+    <!-- <form action="https://docs.google.com/forms/d/e/1FAIpQLScVqiHvX1Q18tfbSVy2xbm4PQVwK3WuU4aVsbDNZaOt-YL9Lg/formResponse" target="_self" method="POST" >
+    <label>Name*</label>
+    <input type="text" placeholder="Name*" name="entry.2005620554" required>
+
+    <label>Email Address*</label>
+    <input type="email" placeholder="Email address*" name="entry.1045781291" required>
+  
+    <label>Phone Number*</label>
+    <input type="text" placeholder="Phone Number" name="entry.1166974658" required>
+  
+    <label>Skype Id</label>
+    <input type="text" placeholder="Skype Id" name="entry.484430266" required>
+ 
+    <label>Comments</label>
+    <textarea rows="5" placeholder="Comments" name="entry.839337160" required></textarea>
+   
+    <button type="submit">Send</button>
+</form> -->
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutAlign="space-around stretch"
+            fxFlex="60">
+            <div fxLayout="row" fxFlexOffset="5"></div>
+            <!-- Email field -->
+            <mat-form-field appearance="outline">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="Name" formControlName="name">
+              <!-- <mat-error *ngIf="hasError('Email', 'required')">Email is required</mat-error> -->
+              <!-- <mat-error *ngIf="hasError('Email', 'email')">Email is Invalid</mat-error> -->
+            </mat-form-field>
+            <!-- password field -->
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="Email" formControlName="email">
+              <!-- <mat-error *ngIf="hasError('Password', 'required')">Email is required</mat-error> -->
+
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                    <mat-label>Phone Number</mat-label>
+                    <input matInput placeholder="Phone Number" formControlName="phoneNumber">
+                    <!-- <mat-error *ngIf="hasError('Password', 'required')">Email is required</mat-error> -->
+      
+                  </mat-form-field>
+            <!-- submit button -->
+            <button mat-raised-button [ngStyle]="{'background-color':'#fe4987'}" type="submit">Login</button>
+
+
+          </form>
+
+
+
+
+

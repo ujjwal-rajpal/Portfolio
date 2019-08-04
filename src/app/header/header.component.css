@@ -1,0 +1,41 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* to improve  */
+a:link{
+  text-decoration: none;
+}
+/* a:visited{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+a:focus{
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+} */
+
+
+/* to display active link in angular */
+a.active{
+  text-decoration: underline;
+
+}

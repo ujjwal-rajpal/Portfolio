@@ -1,0 +1,57 @@
+<div fxLayout="column" fxLayoutAlign="start stretch">
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav position="end" #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="false">
+      <!-- <mat-toolbar>Menu</mat-toolbar> -->
+      <mat-nav-list>
+        <a (click)="drawer.close()" routerLinkActive="active" mat-list-item routerLink="/about">About</a>
+        <a (click)="drawer.close()" routerLinkActive="active" mat-list-item routerLink="/portfolio">Portfolio</a>
+        <a (click)="drawer.close()" routerLinkActive="active" mat-list-item routerLink="/articles">Articles</a>
+        <a (click)="drawer.close()" routerLinkActive="active" mat-list-item routerLink="/contact">Contact</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+      <mat-toolbar color="primary">
+        <!-- name Close the sidenav -->
+        <div fxFlex.md="100%" fxFlex.sm="100%" fxFlex.lg="100%" fxFlex.xl="100%" fxFlex.xs="85%"
+          (click)="drawer.close()" fixedInViewport>
+          <span fxFlex.md="55%" fxFlex.sm="55%" fxFlex.lg="70%" fxFlex.xl="70%">
+
+            <a mat-list-item routerLink="/about"  [ngStyle]="{'color':'white'}">
+              <div fxLayout="row">
+                <img src="https://www.dropbox.com/s/w4zquzkpf8f9h9i/logo.png?dl=0" >
+
+                Ujjwal Rajpal
+                <!-- <div fxLayout="row" > -->
+              </div>
+
+
+            </a>
+
+          </span>
+          <a mat-list-item routerLinkActive="active" routerLink="/about" fxHide.xs fxFlex.md="10%" fxFlex.sm="12%"
+            fxFlex.lg="7%" fxFlex.xl="7%" [ngStyle]="{'color':'white'}">About</a>
+          <a mat-list-item routerLinkActive="active" routerLink="/portfolio" fxHide.xs fxFlex.md="13%" fxFlex.sm="15%"
+            fxFlex.lg="8%" fxFlex.xl="8%" [ngStyle]="{'color':'white'}">Portfolio</a>
+          <a mat-list-item routerLinkActive="active" routerLink="/articles" fxHide.xs fxFlex.md="12%" fxFlex.sm="15%"
+            fxFlex.lg="8%" fxFlex.xl="8%" [ngStyle]="{'color': 'white'}">Articles</a>
+          <a mat-list-item routerLinkActive="active" routerLink="/contact" fxHide.xs fxFlex.md="10%" fxFlex.sm="10%"
+            fxFlex.lg="7%" fxFlex.xl="7%" [ngStyle]="{'color':'white'}">Contact</a>
+        </div>
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async" fxHide.md fxHide.sm fxHide.lg fxHide.xl>
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+      </mat-toolbar>
+
+      <!-- Add Content Here -->
+
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+
+</div>

@@ -1,0 +1,35 @@
+.Font{
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-size: 1.875em;
+    text-align: justify;
+  text-justify: inter-word;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: block;
+  margin-top: .2em;
+  margin-right: .2em;
+  margin-bottom: 1em; 
+}
+
+H3{
+  font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-size: 1em;
+    text-align: justify;
+  text-justify: inter-word;
+}
+h1{
+  margin-top: auto;
+  margin-bottom:auto; 
+}
+h2{
+ 
+  margin-bottom:auto; 
+}
+

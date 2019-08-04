@@ -1,0 +1,95 @@
+<mat-card fxLayout="column" fxLayoutAlign="start stretch" [ngStyle]="{'background-color':'#3f53b5','color':'white' }">
+    <div fxLayout="row" fxFlexOffset="15"></div>
+    <div fxLayout="row" fxLayoutAlign="center stretch">
+        <H1 [ngStyle]="{'margin':'auto'}">About Ujjwal</H1>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center Center">
+        <div  fxFlex.md="1%" fxFlex.xl="1%" fxFlex.xs="10%" fxFlex.sm="1%" fxFlex.lg="1%" ></div>
+        <H2  [ngStyle]="{'text-align':'center'}">Producing high-quality websites and exceptional user experience</H2>
+        <div  fxFlex.md="1%" fxFlex.xl="1%" fxFlex.xs="10%" fxFlex.sm="1%" fxFlex.lg="1%" ></div>
+    </div>
+</mat-card>
+
+<!-- about -->
+<!-- gap -->
+<div fxLayout="column" fxLayoutAlign="start Stretch">
+    <div fxLayout="row" fxFlexOffset="2"></div>
+</div>
+<!-- left gap and start writing -->
+<div fxLayout="row" fxLayoutAlign="start Stretch">
+    <div fxFlex="15%"></div>
+    <img src="https://drive.google.com/open?id=1hlE96IcFV3XllDrWSg3xXAXptPvW5d3L" >
+
+    <div [ngClass]="{'Font': true}">I am a Full Stack Developer, graduate of Computer Science Engineering.I am passionate for providing front-end development, producing high quality responsive websites and exceptional user experience.    
+    </div>
+    <div fxFlex="20%"></div>
+</div>
+
+<!-- gap -->
+<div fxLayout="column" fxLayoutAlign="start Stretch">
+        <div fxLayout="row" fxFlexOffset="2"></div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start Stretch">
+            <div fxFlex="15%" fxFlex="5%"></div>
+
+        <H1>My-Skills</H1>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="start Stretch">
+        <div fxLayout="row" fxFlexOffset="1"></div>
+    </div>
+    <!-- skill -->
+    <div fxLayout="row" fxLayoutAlign="start stretch" *ngFor="let skill of skills">
+        <div fxFlex="15%" fxFlex="5%"></div>
+          <span [ngClass]="{'dot': true}"></span>
+          <span>{{skill}}</span>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="start stretch" >
+        <div fxFlex="15%" fxFlex="5%"></div>
+          <H3>The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.</H3>
+          <div fxFlex="15%" fxFlex="5%"></div>
+        </div>
+    <div fxLayout="row" fxLayoutAlign="start stretch" >
+        <div fxFlex="15%" fxFlex="5%"></div>
+        <H3>Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.</H3>
+        <div fxFlex="15%" fxFlex="5%"></div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start stretch" >
+        <div fxFlex="15%" fxFlex="5%"></div>
+        <H1>Projects</H1>
+        <div fxFlex="15%" fxFlex="5%"></div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start stretch" >
+        <div fxFlex="15%" fxFlex="5%"></div>
+        <H2>ChatBoard:</H2>
+        <div fxFlex="15%" fxFlex="5%"></div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start stretch" >
+        <div fxFlex="15%" fxFlex="5%"></div>
+        <!-- <H3 [ngStyle]="{'margin-top':'auto'}" >Description:  </H3> -->
+            <H3 [ngStyle]="{'margin-top':'auto'}" >
+                Description: It's a Php(slim) and Angular based solution that provides the users to chat.The database is handled by the filemaker,Slim is used to build the rest api,ratchet-websocket for php  performs live chat between users and users experience is handled by the angular7 using material design.
+            The best feature of this application is that it will show  online/offline status of its users , deliver messages in real time and also informs user a new message is received using notification(SnackBar and Badges).
+
+            </H3>
+            
+        <div fxFlex="15%" fxFlex="5%"></div>
+    </div>
+    <!-- Project 2 -->
+
+    <div fxLayout="row" fxLayoutAlign="start stretch" >
+        <div fxFlex="15%" fxFlex="5%"></div>
+        <H2>WP Login  With reCAPTCHA:</H2>
+        <div fxFlex="15%" fxFlex="5%"></div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start stretch" >
+        <div fxFlex="15%" fxFlex="5%"></div>
+        <H3 [ngStyle]="{'margin-top':'auto'}" >Description: It's a Word Prees plugin.It is used to authenticate a bot.It can be used only at admin login page.It calls api of google v2.
+            This plugin is submitted on <a href="https://wordpress.org/plugins/">plugins@wordpress.org</a>. A repository maintained by wordpress that contains a variety of plugins submitted by various developers. </H3>
+        <div fxFlex="15%" fxFlex="5%"> </div>
+    </div>
+    <!-- </div> -->
